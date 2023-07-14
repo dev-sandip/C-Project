@@ -1,32 +1,160 @@
-1	Spider-Man: No Way Home|	12.99	|July 13, 2023 - 5:00 PM
-2	Black Widow	|10.99	|July 13, 2023 - 6:30 PM
-3	The Suicide Squad	|11.99	|July 13, 2023 - 8:00 PM
-4	F9: The Fast Saga	|9.99	|July 13, 2023 - 9:30 PM
-5	Shang-Chi and the Legend of the Ten Rings	|12.99	|July 14, 2023 - 4:00 PM
-6	Jungle Cruise	|10.99	|July 14, 2023 - 6:30 PM
-7	The Green Knight	|11.99	|July 14, 2023 - 9:00 PM
-8	Black Panther: Wakanda Forever	12.99	J|uly 15, 2023 - 5:30 PM
-9	The Matrix Resurrections	|13.99	|July 15, 2023 - 8:00 PM
-10	Dune	|11.99	J|uly 15, 2023 - 10:30 PM
-11	Top Gun: Maverick	10.99	|July 16, 2023 - 3:00 PM
-12	No Time to Die	|12.99	|July 16, 2023 - 6:00 PM
-13	A Quiet Place Part II	|9.99	|July 16, 2023 - 9:00 PM
-14	Eternals	|13.99	|July 17, 2023 - 4:30 PM
-15	Ghostbusters: Afterlife|	10.99	|July 17, 2023 - 7:00 PM
-16	Mission: Impossible 7|	11.99	|July 17, 2023 - 9:30 PM
-17	The Batman	|12.99	|July 18, 2023 - 6:30 PM
-18	Thor: Love and Thunder	|13.99	|July 18, 2023 - 8:30 PM
-19	Jurassic World: Dominion	|11.99	|July 18, 2023 - 10:00 PM
-20	Avatar 2	|14.99	|July 19, 2023 - 5:00 PM
-21	The Flash	|12.99	|July 19, 2023 - 7:30 PM
-22	Doctor Strange in the Multiverse of Madness	|13.99	|July 19, 2023 - 9:30 PM
-23	Indiana Jones 5	|10.99	|July 20, 2023 - 6:00 PM
-24	Guardians of the Galaxy Vol. 3	|12.99	|July 20, 2023 - 8:30 PM
-25	Fantastic Beasts 3	|11.99	|July 20, 2023 - 10:00 PM
-26	Fast & Furious 10	|13.99	|July 21, 2023 - 5:30 PM
-27	Wonder Woman 3	|10.99	|July 21, 2023 - 7:00 PM
-28	Aquaman and the Lost Kingdom	|12.99	|July 21, 2023 - 9:00 PM
-29	The Lion King 2	|11.99	|July 22, 2023 - 6:30 PM
-30	Sherlock Holmes 3	|12.99	|July 22, 2023 - 8:30 PM
-31	Captain Marvel 2	|13.99	|July 22, 2023 - 10:30 PM
-32	Chapali Height 3	|22.22	|July 23, 2023 - 10:30 PM
+
+Id: 1
+Movie Name: Spider-Man: No Way Home
+Date: July 13, 2023
+Time: 5:00 PM
+
+Id: 2
+Movie Name: Black Widow
+Date: July 13, 2023
+Time: 6:30 PM
+
+Id: 3
+Movie Name: The Suicide Squad
+Date: July 13, 2023
+Time: 8:00 PM
+
+Id: 4
+Movie Name: F9: The Fast Saga
+Date: July 13, 2023
+Time: 9:30 PM
+
+Id: 5
+Movie Name: Shang-Chi and the Legend of the Ten Rings
+Date: July 14, 2023
+Time: 4:00 PM
+
+Id: 6
+Movie Name: Jungle Cruise
+Date: July 14, 2023
+Time: 6:30 PM
+
+Id: 7
+Movie Name: The Green Knight
+Date: July 14, 2023
+Time: 9:00 PM
+
+Id: 8
+Movie Name: Black Panther: Wakanda Forever
+Date: July 15, 2023
+Time: 5:30 PM
+
+Id: 9
+Movie Name: The Matrix Resurrections
+Date: July 15, 2023
+Time: 8:00 PM
+
+Id: 10
+Movie Name: Dune
+Date: July 15, 2023
+Time: 10:30 PM
+
+Id: 11
+Movie Name: Top Gun: Maverick
+Date: July 16, 2023
+Time: 3:00 PM
+
+Id: 12
+Movie Name: No Time to Die
+Date: July 16, 2023
+Time: 6:00 PM
+
+Id: 13
+Movie Name: A Quiet Place Part II
+Date: July 16, 2023
+Time: 9:00 PM
+
+Id: 14
+Movie Name: Eternals
+Date: July 17, 2023
+Time: 4:30 PM
+
+Id: 15
+Movie Name: Ghostbusters: Afterlife
+Date: July 17, 2023
+Time: 7:00 PM
+
+Id: 16
+Movie Name: Mission: Impossible 7
+Date: July 17, 2023
+Time: 9:30 PM
+
+Id: 17
+Movie Name: The Batman
+Date: July 18, 2023
+Time: 6:30 PM
+
+Id: 18
+Movie Name: Thor: Love and Thunder
+Date: July 18, 2023
+Time: 8:30 PM
+
+Id: 19
+Movie Name: Jurassic World: Dominion
+Date: July 18, 2023
+Time: 10:00 PM
+
+Id: 20
+Movie Name: Avatar 2
+Date: July 19, 2023
+Time: 5:00 PM
+
+Id: 21
+Movie Name: The Flash
+Date: July 19, 2023
+Time: 7:30 PM
+
+Id: 22
+Movie Name: Doctor Strange in the Multiverse of Madness
+Date: July 19, 2023
+Time: 9:30 PM
+
+Id: 23
+Movie Name: Indiana Jones 5
+Date: July 20, 2023
+Time: 6:00 PM
+
+Id: 24
+Movie Name: Guardians of the Galaxy Vol. 3
+Date: July 20, 2023
+Time: 8:30 PM
+
+Id: 25
+Movie Name: Fantastic Beasts 3
+Date: July 20, 2023
+Time: 10:00 PM
+
+Id: 26
+Movie Name: Fast & Furious 10
+Date: July 21, 2023
+Time: 5:30 PM
+
+Id: 27
+Movie Name: Wonder Woman 3
+Date: July 21, 2023
+Time: 7:00 PM
+
+Id: 28
+Movie Name: Aquaman and the Lost Kingdom
+Date: July 21, 2023
+Time: 9:00 PM
+
+Id: 29
+Movie Name: The Lion King 2
+Date: July 22, 2023
+Time: 6:30 PM
+
+Id: 30
+Movie Name: Sherlock Holmes 3
+Date: July 22, 2023
+Time: 8:30 PM
+
+Id: 31
+Movie Name: Captain Marvel 2
+Date: July 22, 2023
+Time: 10:30 PM
+
+Id: 32
+Movie Name: Chapali Height 3
+Date: July 23, 2023
+Time: 10:30 PM
