@@ -1,8 +1,6 @@
 # Ignore test directory
 /test/
 
-# Ignore C executable files
-*.exe
 # Prerequisites
 *.d
 
