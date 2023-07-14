@@ -1,8 +1,8 @@
 
-Id: 1
-Movie Name: Spider-Man: No Way Home
+Id= 1
+MovieName: Spider-Man: No Way Home
 Date: July 13, 2023
-Time: 5:00 PM
+Time: 5:00 
 
 Id: 2
 Movie Name: Black Widow
