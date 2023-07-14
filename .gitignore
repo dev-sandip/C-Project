@@ -3,7 +3,7 @@
 
 # Ignore C executable files
 *.exe
- Prerequisites
+# Prerequisites
 *.d
 
 # Object files
