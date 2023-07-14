@@ -10,41 +10,60 @@ void Introduction(){
 int UserId() {
     time_t currentTime = time(NULL);
     int randomNum = rand();
-    int uniqueID = currentTime+randomNum;
-    printf("%d",uniqueID);
+    long int uniqueID = currentTime+randomNum;
     return uniqueID;
 }
 
 void UserInformationInput(){
     char name[100];
     char email[100];
-    int number;
+    int phonenumber;
+    int id = UserId();
+
     printf("Enter your name :\n");
     // fgets( name,100,stdin);
     scanf("%[^\n]", name);
     printf("Enter your email adderess:\n");
     scanf("%s", email);
     printf("Enter your mobile number:\n"); 
-    scanf("%d", &number);
+    scanf("%ld", &phonenumber);
     printf("Your name is %s\n",name); 
     printf("Your email is %s\n",email);
-    printf("Your number is %d\n",number);
+    printf("Your number is %ld\n",phonenumber);
+    printf(" Your UserId  is :%d\t",id);
+
     FILE *fptr;
     fptr = fopen("data/users.txt", "a"); // file is opened in append mode cause we dont have to remove the existing user data in the file
     if(fptr == NULL){
     printf("Error! Could not open file\n");
+    exit(1);
     }else{
-    fprintf(fptr," UserId :%d\t",UserId());
+    fprintf(fptr," UserId :%d\t",id);
     fprintf(fptr," Name :%s\t",name);
     fprintf(fptr," Email :%s\t",email);
-    fprintf(fptr,"Mobile Number:%d\n",number);
+    fprintf(fptr,"Mobile Number:%ld\n",phonenumber);
 }
     fclose(fptr);}
+// void MoviesList(){
+//     int Id;
+//     char MovieName[100];
+//     int Time;
+//     FILE *fptr;
+//     fptr = fopen("data/MoviesList.txt","r");
+//     if(fptr == NULL){
+//     printf("Error! Could not open file\n");
+//     exit(1);}
+    
+//     else{
+//         fscanf(fptr,"%d",&Id);
+//         printf(fptr,"%d",Id);
+//     }
+//     fclose(fptr);
+// }
 
 int main()
 {
     Introduction();
     UserInformationInput();
-    UserId();
     return 0;
 }
