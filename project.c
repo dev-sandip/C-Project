@@ -1,11 +1,42 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
-typedef struct Candidates{
+typedef struct Candidates {
     int id;
     char name[50];
     int votes;
+} can;
+
+void CandidateDetailsInput(can can[], int n) {
+    int i;
+
+    FILE* fptr;
+    fptr = fopen("data/candidates.txt", "a");
+    if (fptr == NULL) {
+        printf("Error! Could not open file\n");
+        exit(1);
+    } else {
+        for (i = 0; i < n; i++) {
+            printf("Enter the candidate id (between 1 and 100):\n");
+            scanf("%d", &can[i].id);
+
+            // Input validation for candidate ID
+            while (can[i].id < 1 || can[i].id > 100) {
+                printf("Invalid candidate ID. Please enter a valid ID (between 1 and 100):\n");
+                scanf("%d", &can[i].id);
+            }
+
+            printf("Enter the candidate name (up to 49 characters):\n");
+            // Using fgets to prevent buffer overflow
+            fflush(stdin);
+            fgets(can[i].name, sizeof(can[i].name), stdin);
+            can[i].name[strcspn(can[i].name, "\n")] = '\0'; // Removing the newline character
+
+            // Write candidate details to the file
+            fprintf(fptr, "Id: %d\tName: %s\n", can[i].id, can[i].name);
+        }
+        fclose(fptr);
+    }
 }
 
 
@@ -19,38 +50,15 @@ void Introduction(){
 
 
 
-void UserInformationInput(){
-    char name[100];
-    char email[100]; UserId :0	 Name :Sandip Sapkota	 Email :test@test.com	Mobile Number:998989
- Name :Sandip Sapkota	 Email :sandipsapkota9844@gmail.com	Mobile Number:1950501659
 
-    int phonenumber=0;
-    printf("Enter your name :\n");
-    // fgets( name,100,stdin);
-    scanf("%[^\n]", name);
-    printf("Enter your email adderess:\n");
-    scanf("%s", email);
-    printf("Enter your mobile number:\n"); 
-    scanf("%ld", &phonenumber);
-    printf("Your name is %s\n",name); 
-    printf("Your email is %s\n",email);
-    printf("Your number is %ld\n",phonenumber);
-
-    FILE *fptr;
-    fptr = fopen("data/users.txt", "a"); // file is opened in append mode cause we dont have to remove the existing user data in the file
-    if(fptr == NULL){
-    printf("Error! Could not open file\n");
-    exit(1);
-    }else{
-    fprintf(fptr," Name :%s\t",name);
-    fprintf(fptr," Email :%s\t",email);
-    fprintf(fptr,"Mobile Number:%ld\n",phonenumber);
-}
-    fclose(fptr);}
 
 int main()
 {
-    Introduction();
-    UserInformationInput();
+    int n;
+    printf("How many candidates do you want to enter?\n");
+    scanf("%d", &n);
+
+    can candidates[n];
+    CandidateDetailsInput(candidates, n);
     return 0;
 }

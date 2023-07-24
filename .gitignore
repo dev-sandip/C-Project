@@ -58,3 +58,4 @@ project
 test.c
 test
 main.c
+functions.c
