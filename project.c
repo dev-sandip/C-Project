@@ -61,11 +61,41 @@ void Introduction(){
 
 int main()
 {
-    int n;
-    printf("How many candidates do you want to enter?\n");
-    scanf("%d", &n);
+    int n,choice;
     can candidates[n];
-    CandidateDetailsInput(candidates, n);
-    displayCandidates();
+    Introduction();
+    while (1) {
+        printf("\nMenu:\n");
+        printf("1. Enter Candidate Details\n");
+        printf("2. Display Candidates Details\n");
+        printf("3. Caste a vote!\n");
+        printf("4. Display Results\n");
+        printf("5. Exit\n");
+
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("How many candidates do you want to enter?\n");
+                scanf("%d", &n);
+                CandidateDetailsInput(candidates, n);
+                break;
+            case 2:
+              displayCandidates();
+                break;
+            case 3:
+                
+                break;
+            case 4:
+                break;
+             case 5:
+                printf("Exiting the Voting System. Thank you!\n");
+                return 0;    
+            default:
+                printf("Invalid choice. Please try again.\n");
+                break;
+        }
+    }
     return 0;
 }
