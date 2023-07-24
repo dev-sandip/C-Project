@@ -44,4 +44,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 Feel free to contribute to this project by submitting pull requests or opening issues. If you have any suggestions or improvements, please feel free to share them.
 
-For any questions or inquiries, please contact [079bct076@ioepc.ed.np](mailto:079bct076@ioepc.ed.np).
+For any questions or inquiries, please contact [079bct076@ioepc.edu.np](mailto:079bct076@ioepc.edus.np).
