@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include<string.h>
+
+typedef struct Candidates{
+    int id;
+    char name[50];
+    int votes;
+}
+
+
+
+
+
 void Introduction(){
     printf("\t\t---Welcome To Console Voting System System!-----\n");
     printf("\t\t----Developed by Sandip,Raghav,Subakhar & Sulav----\n");
@@ -10,7 +21,9 @@ void Introduction(){
 
 void UserInformationInput(){
     char name[100];
-    char email[100];
+    char email[100]; UserId :0	 Name :Sandip Sapkota	 Email :test@test.com	Mobile Number:998989
+ Name :Sandip Sapkota	 Email :sandipsapkota9844@gmail.com	Mobile Number:1950501659
+
     int phonenumber=0;
     printf("Enter your name :\n");
     // fgets( name,100,stdin);

@@ -55,3 +55,6 @@ Mkfile.old
 dkms.conf
 main
 project
+test.c
+test
+main.c
