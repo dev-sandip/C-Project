@@ -1,5 +1,0 @@
-Id: 1	Name: Sandip Sapkota
-Id: 2	Name: Ragav Upahdayay
-Id: 3	Name: Subhakar Pant
-Id: 4	Name: Sulav Paudel
-Id: 5	Name: Utsab Pandey

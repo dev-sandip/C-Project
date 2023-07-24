@@ -71,10 +71,8 @@ int main()
         printf("3. Caste a vote!\n");
         printf("4. Display Results\n");
         printf("5. Exit\n");
-
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
         switch (choice) {
             case 1:
                 printf("How many candidates do you want to enter?\n");
