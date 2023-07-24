@@ -1,7 +1,7 @@
 # Console-based Voting System in C
 
-![GitHub last commit](https://img.shields.io/github/last-commit/git-sandip/C-Project)
-![GitHub](https://img.shields.io/github/license/git-sandip/C-Project)
+![GitHub last commit](https://img.shields.io/github/last-commit/dev-sandip/C-Project)
+![GitHub](https://img.shields.io/github/license/dev-sandip/C-Project)
 
 A simple console-based voting system implemented in C. This project allows users to view a list of candidates, cast their votes, and view the voting results.
 
