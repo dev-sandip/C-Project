@@ -10,7 +10,6 @@ A simple console-based voting system implemented in C. This project allows users
 - [Introduction](#introduction)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
 - [License](#license)
 
 ## Introduction
@@ -31,10 +30,6 @@ To run this voting system on your local machine, follow these steps:
 1. Clone the repository:
 2. Follow the on-screen instructions to navigate through the voting system.
 3. After casting votes and viewing the results, choose option 4 to save and exit. The voting results will be stored in "voting_results.txt".
-
-## Usage
-
-1. Run the compiled program:
 
 ## License
 
