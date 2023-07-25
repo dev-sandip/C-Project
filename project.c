@@ -12,7 +12,7 @@ void CandidateDetailsInput(can can[], int n) {
     FILE* fptr;
     fptr = fopen("data/candidates.txt", "a");
     if (fptr == NULL) {
-        printf("Error! Could not open file\n");
+        printf("Error! Some Error Occured in File Database!\n");
         exit(1);
     } else {
         for (i = 0; i < n; i++) {
@@ -51,7 +51,12 @@ void displayCandidates() {
 
     fclose(fptr);
 }
-
+void CastVote(){
+    exit(0);
+}
+void DisplayResults(){
+    exit(0);
+}
 
 
 void Introduction(){
@@ -83,9 +88,10 @@ int main()
               displayCandidates();
                 break;
             case 3:
-                
+                CastVote();
                 break;
             case 4:
+                DisplayResults();
                 break;
              case 5:
                 printf("Exiting the Voting System. Thank you!\n");
