@@ -12,7 +12,7 @@ void CandidateDetailsInput(can can[], int n) {
     FILE* fptr;
     fptr = fopen("data/candidates.txt", "a");
     if (fptr == NULL) {
-        printf("Error! Some Error Occured in File Database!\n");
+        printf("Error! Some Error Occurred in File Database!\n");
         exit(1);
     } else {
         for (i = 0; i < n; i++) {
@@ -28,7 +28,7 @@ void CandidateDetailsInput(can can[], int n) {
             printf("Enter the candidate name (up to 49 characters):\n");
             scanf(" %[^\n]", can[i].name);
             
-            // Write candidate details to the file
+            
             fprintf(fptr, "Id: %d\tName: %s\n", can[i].id, can[i].name);
         }
         fclose(fptr);
@@ -51,11 +51,12 @@ void displayCandidates() {
 
     fclose(fptr);
 }
-void CastVote(){
-    exit(0);
+void CastVote() {
+    printf("Voting feature is not implemented yet.\n");
 }
-void DisplayResults(){
-    exit(0);
+
+void DisplayResults() {
+    printf("Displaying results is not implemented yet.\n");
 }
 
 
