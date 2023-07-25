@@ -52,8 +52,57 @@ void displayCandidates() {
     fclose(fptr);
 }
 void CastVote() {
-    printf("Voting feature is not implemented yet.\n");
+    int vid, vote;
+    char vname[50];
+
+    printf("Enter your voter ID:\n");
+    scanf("%d", &vid);
+
+    printf("Enter your name (up to 49 characters):\n");
+    scanf(" %[^\n]", vname);
+
+    printf("Enter the candidate ID you want to vote for:\n");
+    scanf("%d", &vote);
+
+    FILE* fptr;
+    FILE* tmpfptr;
+    FILE* voters;
+    voters = fopen("data/voterslist.txt", "a");
+    fptr = fopen("data/candidates.txt", "r");
+    tmpfptr = fopen("data/tmpfile.txt", "w");
+
+    if (fptr == NULL || tmpfptr == NULL || voters == NULL) {
+        printf("Error! Could not open file\n");
+        exit(1);
+    }
+
+    char line[100];
+    while (fgets(line, sizeof(line), fptr) != NULL) {
+        int id, votes;
+        char name[50];
+
+        if (sscanf(line, "Id: %d\tName: %[^\t]\tVotes: %d", &id, name, &votes) == 3) {
+            if (id == vote) {
+                votes++;
+                fprintf(voters, "Voter ID: %d\tName: %s\n", vid, vname);
+                fprintf(tmpfptr, "Id: %d\tName: %s\tVotes: %d\n", id, name, votes);
+                printf("Vote cast successfully for %s.\n", name);
+            } else {
+                fprintf(tmpfptr, "%s", line);
+            }
+        } else {
+            fprintf(tmpfptr, "%s", line);
+        }
+    }
+
+    fclose(fptr);
+    fclose(tmpfptr);
+    fclose(voters);
+    remove("data/candidates.txt");
+    rename("data/tmpfile.txt", "data/candidates.txt");
 }
+
+
 
 void DisplayResults() {
     printf("Displaying results is not implemented yet.\n");
