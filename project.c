@@ -104,8 +104,44 @@ void CastVote() {
 
 
 
-void DisplayResults() {
-    printf("Displaying results is not implemented yet.\n");
+void DisplayVotes() {
+    printf("Displaying Candidate Votes:\n");
+
+    FILE* fptr;
+    fptr = fopen("data/candidates.txt", "r");
+    if (fptr == NULL) {
+        printf("Error! Could not open file\n");
+        exit(1);
+    }
+
+    int maxVotes = -1;
+    char maxVotesCandidate[50] = "";
+
+    printf("ID\tVotes\tCandidate Name\n");
+    char line[100];
+    while (fgets(line, sizeof(line), fptr) != NULL) {
+        int id, votes;
+        char name[50];
+
+        if (sscanf(line, "Id:%d\tVotes:%d\tName:%[^\t]", &id, &votes, name) == 3) {
+            printf("%d\t%d\t%s\n", id, votes, name);
+
+            if (votes > maxVotes) {
+                maxVotes = votes;
+                strcpy(maxVotesCandidate, name);
+            }
+        }
+    }
+
+    if (maxVotes > -1) {
+        printf("\nCandidate with the highest votes:\n");
+        printf("Name: %s\n", maxVotesCandidate);
+        printf("Votes: %d\n", maxVotes);
+    } else {
+        printf("\nNo candidates found.\n");
+    }
+
+    fclose(fptr);
 }
 
 
@@ -141,7 +177,7 @@ int main()
                 CastVote();
                 break;
             case 4:
-                DisplayResults();
+                DisplayVotes();
                 break;
              case 5:
                 printf("Exiting the Voting System. Thank you!\n");
