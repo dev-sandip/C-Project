@@ -29,13 +29,13 @@ void CandidateDetailsInput(can can[], int n) {
             scanf(" %[^\n]", can[i].name);
             
             
-            fprintf(fptr, "Id: %d\tName: %s\n", can[i].id, can[i].name);
+            fprintf(fptr, "Id:%d\tVotes:0\tName:%s\n", can[i].id, can[i].name);
         }
         fclose(fptr);
     }
 }
 void displayCandidates() {
-    printf("ID\tCandidate Name\n");
+    printf("ID\tVotes\tCandidate Name\n");
 
     FILE* fptr;
     fptr = fopen("data/candidates.txt", "r");
@@ -59,7 +59,7 @@ void CastVote() {
     scanf("%d", &vid);
 
     printf("Enter your name (up to 49 characters):\n");
-    scanf(" %[^\n]", vname);
+    scanf(" %[^\n]", &vname);
 
     printf("Enter the candidate ID you want to vote for:\n");
     scanf("%d", &vote);
@@ -81,11 +81,11 @@ void CastVote() {
         int id, votes;
         char name[50];
 
-        if (sscanf(line, "Id: %d\tName: %[^\t]\tVotes: %d", &id, name, &votes) == 3) {
+        if (sscanf(line, "Id:%d\tVotes:%d\tName:%[^\t]", &id,&votes,name)== 3) {
             if (id == vote) {
                 votes++;
-                fprintf(voters, "Voter ID: %d\tName: %s\n", vid, vname);
-                fprintf(tmpfptr, "Id: %d\tName: %s\tVotes: %d\n", id, name, votes);
+                fprintf(voters, "Voter ID:%d\tName:%s\n", vid, vname);
+                fprintf(tmpfptr,"Id:%d\tVotes:%d\tName:%s\n", id, votes, name);
                 printf("Vote cast successfully for %s.\n", name);
             } else {
                 fprintf(tmpfptr, "%s", line);
