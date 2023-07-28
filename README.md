@@ -51,4 +51,4 @@ Feel free to explore, modify, and contribute to this repository to improve the v
 
 Feel free to contribute to this project by submitting pull requests or opening issues. If you have any suggestions or improvements, please feel free to share them.
 
-For any questions or inquiries, please contact [079bct076@ioepc.edu.np](mailto:079bct076@ioepc.edus.np).
+For any questions or inquiries, please contact [079bct076@ioepc.edu.np](mailto:079bct076@ioepc.edu.np).
