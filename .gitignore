@@ -59,3 +59,4 @@ test.c
 test
 main.c
 functions.c
+tests/rohit.c
