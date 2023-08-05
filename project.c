@@ -149,19 +149,30 @@ void Introduction(){
     printf("\t\t---Welcome To Console Voting System System!-----\n");
     printf("\t\t----Developed by Sandip,Raghav,Subakhar & Sulav----\n");
 }
+void design_lines(){
+    for(int i=0; i<80; i++){
+        printf("-");
+    }
+    printf("\n");
+}
+
 
 int main()
 {
     int n,choice;
     can candidates[n];
+    design_lines();
     Introduction();
     while (1) {
+        design_lines();
         printf("\nMenu:\n");
+        design_lines();
         printf("1. Enter Candidate Details\n");
         printf("2. Display Candidates Details\n");
         printf("3. Caste a vote!\n");
         printf("4. Display Results\n");
         printf("5. Exit\n");
+        design_lines();
         printf("Enter your choice: ");
         scanf("%d", &choice);
         switch (choice) {
