@@ -46,8 +46,8 @@ This console voting system is a basic implementation and may require further enh
 Feel free to explore, modify, and contribute to this repository to improve the voting system!
 
 ## Team
-![Sandip Sapkota](https://github.com/dev-sandip)
-![Raghav Updhayay](https://github.com/Meraghav4)
+![Sandip Sapkota](https://github.com/git-sandip)
+![Raghav Upadhyay](https://github.com/Meraghav4)
 ![Subhakar Pant](https://github.com/its-subhakar9)
 ![Sulav Poudel](https://www.facebook.com/sulav.poudel.18)
 
