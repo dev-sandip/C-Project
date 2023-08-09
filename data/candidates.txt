@@ -1,5 +1,4 @@
-Id:1	Votes:0	Name:Ragav
-Id:2	Votes:0	Name:Sulav
-Id:3	Votes:1	Name:Subakhar
+Id:11	Votes:2	Name:Sandip Sapkota
 
-Id:1	Votes:0	Name:sssss
+
+Id:12	Votes:0	Name:Sulav Paudel

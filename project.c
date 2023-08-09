@@ -147,7 +147,7 @@ void DisplayVotes() {
 
 void Introduction(){
     printf("\t\t---Welcome To Console Voting System System!-----\n");
-    printf("\t\t----Developed by Sandip,Raghav,Subakhar & Sulav----\n");
+    printf("\t\t----Developed by Sandip,Raghav,Subhakar & Sulav----\n");
 }
 void design_lines(){
     for(int i=0; i<80; i++){
@@ -187,7 +187,6 @@ int main()
             case 3:
                 CastVote();
                 break;
-            case 4:
                 DisplayVotes();
                 break;
              case 5:
