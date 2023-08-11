@@ -65,13 +65,13 @@ For any questions or inquiries, please contact [079bct076@ioepc.edu.np](mailto:0
 
 ## Suggestion By Teachers After Project Submission!
 
-- Presentation Was Gone Little as well
+- Presentation Was Gone Little F as well
 
 1. Candidate details should be hardcoded or admin system should be run or build separately!
 2. Details of Candidates should be displayed automatically immediately after program execution!
 3. User(Voter) should be able to directly enter their voter id and name and able to vote!
 4. There should be exit button secretly as only admin or administrator only stop or run the program as well as there is no need to display voting results directly in voting machine!
 
-` Note You must analyze real life use or test cases before involving on a certain topic/project`
+` Note: You must analyze real life use or test cases before involving on a certain topic/project`
 
 ## Thank you !
